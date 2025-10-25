@@ -82,7 +82,9 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 <img width="390" height="112" alt="1" src="https://github.com/user-attachments/assets/56a63607-42cd-46ba-8f6e-f6bc20653b6a" />
 ###### - Download apache server, giải nén ra ổ D, cấu hình các file:
 <img width="551" height="70" alt="2" src="https://github.com/user-attachments/assets/c05070f6-07d2-4ee3-8d5d-63c2174c0570" />
+
 <img width="568" height="32" alt="3" src="https://github.com/user-attachments/assets/34d8147e-166f-4997-b5d9-03b911b1f6ef" />
+
 <img width="263" height="150" alt="4" src="https://github.com/user-attachments/assets/78635f01-db0d-4e09-a0fb-f3dced3b7604" />
 ###### đổi thành đường dẫn cài đặt ở ổ d
 <img width="391" height="56" alt="5" src="https://github.com/user-attachments/assets/1d276b3f-47d2-4809-a210-7f32b61a205c" />

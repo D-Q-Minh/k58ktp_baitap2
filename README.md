@@ -115,3 +115,18 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 ##### 2. Cài đặt nodejs và nodered
 ###### - Cài đặt nodejs:
 <img width="457" height="108" alt="16" src="https://github.com/user-attachments/assets/846ad881-ea82-423e-84a1-ea3a5ec764da" />
+###### - cài đặt nodered: chạy cmd, vào thư mục `D:\nodejs`, chạy lệnh `npm install -g --unsafe-perm node-red --prefix "D:\nodejs\nodered"`
+<img width="809" height="179" alt="17" src="https://github.com/user-attachments/assets/3024a333-efe0-4188-880d-72ab89ee60c8" />
+###### + giải nén được file nssm.exe, copy nssm.exe vào thư mục `D:\nodejs\nodered\`
+<img width="266" height="235" alt="18" src="https://github.com/user-attachments/assets/ac507a6d-abf5-4793-9454-6779f90822bf" />
+###### + Node.js và npm đã hoạt động
+<img width="154" height="92" alt="19" src="https://github.com/user-attachments/assets/bb55db84-b15b-457e-9834-cdb02979ae1d" />
+###### + tạo file "D:\nodejs\nodered\run-nodered.cmd" với nội dung:
+<img width="863" height="177" alt="20" src="https://github.com/user-attachments/assets/e19504ad-847d-4912-909c-c1e93d28c70d" />
+###### + mở cmd, chuyển đến thư mục: `D:\nodejs\nodered`
+###### + cài đặt service `a1-nodered` bằng lệnh: nssm.exe install a1-nodered "D:\nodejs\nodered\run-nodered.cmd"
+<img width="649" height="50" alt="21" src="https://github.com/user-attachments/assets/43936631-d8c8-4905-883d-35e0a1eb6e6e" />
+###### + chạy service `a1-nodered` bằng lệnh: `nssm start a1-nodered`
+<img width="458" height="51" alt="22" src="https://github.com/user-attachments/assets/c1a17ef9-d7de-4f76-9270-70f98ada66b0" />
+
+##### 3. Tạo csdl tuỳ ý trên mssql (sql server 2022)

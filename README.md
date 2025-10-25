@@ -91,6 +91,8 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 <img width="391" height="56" alt="5" src="https://github.com/user-attachments/assets/1d276b3f-47d2-4809-a210-7f32b61a205c" />
 
 <img width="646" height="209" alt="7" src="https://github.com/user-attachments/assets/fa1af55a-9d1f-44ff-9637-a29c185146b0" />
+<img width="503" height="64" alt="12 1" src="https://github.com/user-attachments/assets/943d6377-4c8b-4d37-a7fb-f3a2a24c6d1f" />
+<img width="305" height="184" alt="12 2" src="https://github.com/user-attachments/assets/0f54376f-b2bf-4101-af67-d5dab5df7d03" />
 
 ###### + D:Apache24\conf\extra\httpd-vhosts.conf
 <img width="286" height="289" alt="6" src="https://github.com/user-attachments/assets/6c2ea0f3-344c-478d-a35c-63654a775f16" />
@@ -99,4 +101,17 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 ###### website đặt tại thư mục:
 <img width="343" height="29" alt="image" src="https://github.com/user-attachments/assets/5df4d589-0ab5-40ee-827b-f888005658ac" />
 
-###### cài đặt Apache
+###### - sử dụng file `c:\WINDOWS\SYSTEM32\Drivers\etc\hosts` để fake ip 127.0.0.1 cho domain này
+<img width="404" height="85" alt="10" src="https://github.com/user-attachments/assets/b661aff6-1f61-434e-84f5-09b1b9eeecc0" />
+<img width="574" height="347" alt="11" src="https://github.com/user-attachments/assets/82e0b724-3957-418d-b6ae-02fea13b9893" />
+
+###### - cài đặt, khởi động Apache
+<img width="605" height="101" alt="13" src="https://github.com/user-attachments/assets/73ccf6e6-d0ed-4282-822f-6783727b9b67" />
+<img width="427" height="32" alt="14" src="https://github.com/user-attachments/assets/038b7b0c-4718-42af-810a-0168520fde2b" />
+<img width="376" height="183" alt="15" src="https://github.com/user-attachments/assets/fa3731c1-1550-4eb3-8da3-56a36714410d" />
+<img width="351" height="179" alt="12 3" src="https://github.com/user-attachments/assets/e5068f20-6f83-4bc6-ab1b-2ed9014d7cab" />
+<img width="335" height="123" alt="15 1" src="https://github.com/user-attachments/assets/28821a15-0b75-4357-a6dc-273f9dec1ba0" />
+
+##### 2. Cài đặt nodejs và nodered
+###### - Cài đặt nodejs:
+<img width="457" height="108" alt="16" src="https://github.com/user-attachments/assets/846ad881-ea82-423e-84a1-ea3a5ec764da" />

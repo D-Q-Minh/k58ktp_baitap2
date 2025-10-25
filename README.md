@@ -82,9 +82,21 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 <img width="390" height="112" alt="1" src="https://github.com/user-attachments/assets/56a63607-42cd-46ba-8f6e-f6bc20653b6a" />
 ###### - Download apache server, giải nén ra ổ D, cấu hình các file:
 <img width="551" height="70" alt="2" src="https://github.com/user-attachments/assets/c05070f6-07d2-4ee3-8d5d-63c2174c0570" />
-
 <img width="568" height="32" alt="3" src="https://github.com/user-attachments/assets/34d8147e-166f-4997-b5d9-03b911b1f6ef" />
-
 <img width="263" height="150" alt="4" src="https://github.com/user-attachments/assets/78635f01-db0d-4e09-a0fb-f3dced3b7604" />
+
+###### + D:\Apache24\conf\httpd.conf
 ###### đổi thành đường dẫn cài đặt ở ổ d
+###### thêm servername
 <img width="391" height="56" alt="5" src="https://github.com/user-attachments/assets/1d276b3f-47d2-4809-a210-7f32b61a205c" />
+
+<img width="646" height="209" alt="7" src="https://github.com/user-attachments/assets/fa1af55a-9d1f-44ff-9637-a29c185146b0" />
+
+###### + D:Apache24\conf\extra\httpd-vhosts.conf
+<img width="286" height="289" alt="6" src="https://github.com/user-attachments/assets/6c2ea0f3-344c-478d-a35c-63654a775f16" />
+<img width="437" height="150" alt="8" src="https://github.com/user-attachments/assets/07a7f5f9-04af-4d2c-b606-f1de8aeec520" />
+
+###### website đặt tại thư mục:
+<img width="343" height="29" alt="image" src="https://github.com/user-attachments/assets/5df4d589-0ab5-40ee-827b-f888005658ac" />
+
+###### cài đặt Apache

@@ -180,11 +180,11 @@ tìm đến chỗ adminAuth, bỏ comment # ở đầu dòng (8 dòng), thay chu
 <img width="1366" height="728" alt="40" src="https://github.com/user-attachments/assets/ae035dc2-d5af-44e4-9d50-34269c010349" />
 
 ##### 5. tạo api back-end bằng nodered:
-###### - sử dụng node `http in` và `http response` để tạo api:
+- sử dụng node `http in` và `http response` để tạo api:
 <img width="651" height="302" alt="41" src="https://github.com/user-attachments/assets/50d0736e-b955-473f-9d19-7de1f4302b16" />
-###### - thêm node `MSSQL` để truy vấn tới cơ sở dữ liệu:
+- thêm node `MSSQL` để truy vấn tới cơ sở dữ liệu:
 <img width="600" height="339" alt="42" src="https://github.com/user-attachments/assets/cd1e4366-256d-4156-8587-7a3d4dddeee9" />
-###### - logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây): 
+- logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây): 
   1. http in  : dùng GET cho đơn giản, URL đặt tuỳ ý, ví dụ: /timkiem
   2. function : để tiền xử lý dữ liệu gửi đến
   3. MSSQL: để truy vấn dữ liệu tới CSDL, nhận tham số từ node tiền xử lý

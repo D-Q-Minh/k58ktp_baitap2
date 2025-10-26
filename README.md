@@ -195,3 +195,8 @@ tìm đến chỗ adminAuth, bỏ comment # ở đầu dòng (8 dòng), thay chu
 
 
 - test api thông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=thị
+
+##### 6. Tạo giao diện front-end:
+
+##### 7. Nhận xét bài làm của mình:
+Quá trình làm bài đã giúp em củng cố kiến thức một cách toàn diện về chu trình phát triển ứng dụng. Em đã nắm vững cách cài đặt và cấu hình các phần mềm cốt lõi: Apache được thiết lập như một Web Server nội bộ để phục vụ các file Front-end tĩnh, trong khi Node.js tạo môi trường cho Node-RED hoạt động như máy chủ API. Việc hiểu rõ cách Apache phục vụ nội dung qua thư mục htdocs và cách Node-RED mặc định chạy trên cổng 1880 đã làm rõ mối liên hệ giữa các thành phần trên cùng một máy tính.

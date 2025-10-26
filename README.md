@@ -133,9 +133,44 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 ###### tạo database tên web_bt_102025
 ###### tạo bảng sv:
 <img width="215" height="164" alt="23" src="https://github.com/user-attachments/assets/e2494267-8b49-4fb7-b55b-4cee6f66b7ec" />
-ip:
-port:
-username:
-password:
-db_name:
-table_name:
+ip: 127.0.0.1
+port: 1433
+username: sa
+password: 1234
+db_name: web_bt_102025
+table_name: sv
+
+##### 4. Cài đặt thư viện trên nodered:
+###### - giao diện nodered bằng url: http://localhost:1880:
+<img width="1366" height="728" alt="26" src="https://github.com/user-attachments/assets/9481ccdb-6184-45b2-ac11-c7b7fe1b9136" />
+###### - cài đặt các thư viện: node-red-contrib-mssql-plus, node-red-node-mysql, node-red-contrib-telegrambot, node-red-contrib-moment, node-red-contrib-influxdb, node-red-contrib-duckdns, node-red-contrib-cron-plus
+###### dừng service Node-RED (nếu đang chạy):
+<img width="445" height="40" alt="27" src="https://github.com/user-attachments/assets/0bc1cd97-33c3-4330-a63e-5ee28ff0c50e" />
+###### cài đặt các thư viện:
+<img width="607" height="254" alt="28" src="https://github.com/user-attachments/assets/889268e1-b23a-4547-9d99-5ed5ca24be05" />
+<img width="1366" height="282" alt="29" src="https://github.com/user-attachments/assets/f2cf1040-5276-45ef-b08b-b18f37079a5f" />
+<img width="567" height="220" alt="30" src="https://github.com/user-attachments/assets/8de8f0d7-3c7f-484e-b264-c6376d9e6a10" />
+<img width="587" height="220" alt="31" src="https://github.com/user-attachments/assets/2b7181d5-ffda-4eeb-8620-9f16324d5f2a" />
+<img width="571" height="215" alt="32" src="https://github.com/user-attachments/assets/5ff7a09a-2d97-4b6a-bae1-8c695e3ed54b" />
+<img width="599" height="219" alt="33" src="https://github.com/user-attachments/assets/d7234631-4b9f-4fa6-9843-823be631a160" />
+<img width="505" height="199" alt="34" src="https://github.com/user-attachments/assets/76c7340f-cd83-4fa1-a2ce-d6ee6ebf5848" />
+###### khởi động lại service Node-RED
+<img width="462" height="48" alt="35" src="https://github.com/user-attachments/assets/60ee48b7-9733-4f5f-b4a4-5093a5ac1ba8" />
+
+###### - - Sửa file `D:\nodejs\nodered\work\settings.js` : 
+tìm đến chỗ adminAuth, bỏ comment # ở đầu dòng (8 dòng), thay chuỗi mã hoá mật khẩu bằng chuỗi mới
+    adminAuth: {
+        type: "credentials",
+        users: [{
+            username: "admin",
+            password: "chuỗi_mã_hoá_mật_khẩu",
+            permissions: "*"
+        }]
+    },
+###### đã mã hóa mật khẩu:
+<img width="702" height="287" alt="37" src="https://github.com/user-attachments/assets/51386e95-b223-453a-8934-a41c0f695a2d" />
+###### - chạy lại nodered:
+<img width="448" height="53" alt="38" src="https://github.com/user-attachments/assets/f886a52d-a362-4372-a5b4-c805dd20e69a" />
+###### đăng nhập node red:
+<img width="600" height="322" alt="39" src="https://github.com/user-attachments/assets/12334866-9ecb-4907-8c97-9d4a75bca628" />
+<img width="1366" height="728" alt="40" src="https://github.com/user-attachments/assets/ae035dc2-d5af-44e4-9d50-34269c010349" />

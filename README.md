@@ -133,12 +133,16 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 ###### tạo database tên web_bt_102025
 ###### tạo bảng sv:
 <img width="215" height="164" alt="23" src="https://github.com/user-attachments/assets/e2494267-8b49-4fb7-b55b-4cee6f66b7ec" />
+<img width="388" height="178" alt="23 1" src="https://github.com/user-attachments/assets/88fa6df5-1333-4c1d-99c8-fc452c5623bf" />
+
 ip: 127.0.0.1
 port: 1433
 username: sa
 password: 1234
 db_name: web_bt_102025
 table_name: sv
+###### rows affected => kết nối thành công
+<img width="780" height="103" alt="23 2" src="https://github.com/user-attachments/assets/3e84156e-6e51-4ac9-be02-75ec5b902937" />
 
 ##### 4. Cài đặt thư viện trên nodered:
 ###### - giao diện nodered bằng url: http://localhost:1880:
@@ -174,3 +178,16 @@ tìm đến chỗ adminAuth, bỏ comment # ở đầu dòng (8 dòng), thay chu
 ###### đăng nhập node red:
 <img width="600" height="322" alt="39" src="https://github.com/user-attachments/assets/12334866-9ecb-4907-8c97-9d4a75bca628" />
 <img width="1366" height="728" alt="40" src="https://github.com/user-attachments/assets/ae035dc2-d5af-44e4-9d50-34269c010349" />
+
+##### 5. tạo api back-end bằng nodered:
+###### - sử dụng node `http in` và `http response` để tạo api:
+<img width="651" height="302" alt="41" src="https://github.com/user-attachments/assets/50d0736e-b955-473f-9d19-7de1f4302b16" />
+###### - thêm node `MSSQL` để truy vấn tới cơ sở dữ liệu:
+<img width="600" height="339" alt="42" src="https://github.com/user-attachments/assets/cd1e4366-256d-4156-8587-7a3d4dddeee9" />
+###### - logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây): 
+  1. http in  : dùng GET cho đơn giản, URL đặt tuỳ ý, ví dụ: /timkiem
+  2. function : để tiền xử lý dữ liệu gửi đến
+  3. MSSQL: để truy vấn dữ liệu tới CSDL, nhận tham số từ node tiền xử lý
+  4. http response: để phản hồi dữ liệu về client: Status Code=200, Header add : Content-Type = application/json
+  có thể thêm node `debug` để quan sát giá trị trung gian.
+<img width="807" height="317" alt="43" src="https://github.com/user-attachments/assets/1ea2cac2-bafa-4d32-b86d-27b42fc042eb" />

@@ -130,3 +130,12 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 <img width="458" height="51" alt="22" src="https://github.com/user-attachments/assets/c1a17ef9-d7de-4f76-9270-70f98ada66b0" />
 
 ##### 3. Tạo csdl tuỳ ý trên mssql (sql server 2022)
+###### tạo database tên web_bt_102025
+###### tạo bảng sv:
+<img width="215" height="164" alt="23" src="https://github.com/user-attachments/assets/e2494267-8b49-4fb7-b55b-4cee6f66b7ec" />
+ip:
+port:
+username:
+password:
+db_name:
+table_name:

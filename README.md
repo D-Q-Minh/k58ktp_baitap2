@@ -191,3 +191,7 @@ tìm đến chỗ adminAuth, bỏ comment # ở đầu dòng (8 dòng), thay chu
   4. http response: để phản hồi dữ liệu về client: Status Code=200, Header add : Content-Type = application/json
   có thể thêm node `debug` để quan sát giá trị trung gian.
 <img width="807" height="317" alt="43" src="https://github.com/user-attachments/assets/1ea2cac2-bafa-4d32-b86d-27b42fc042eb" />
+<img width="830" height="368" alt="44" src="https://github.com/user-attachments/assets/89efad72-c5d1-459e-b673-0d167cb309ce" />
+
+
+- test api thông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=thị

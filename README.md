@@ -134,11 +134,13 @@ node "D:\nodejs\nodered\node_modules\node-red\red.js" -u "D:\nodejs\nodered\work
 ###### tạo bảng sv:
 <img width="215" height="164" alt="23" src="https://github.com/user-attachments/assets/e2494267-8b49-4fb7-b55b-4cee6f66b7ec" />
 <img width="388" height="178" alt="23 1" src="https://github.com/user-attachments/assets/88fa6df5-1333-4c1d-99c8-fc452c5623bf" />
+<img width="218" height="162" alt="51" src="https://github.com/user-attachments/assets/08dff0b9-5a48-4dfd-8ca5-75315031e49e" />
+<img width="281" height="110" alt="52" src="https://github.com/user-attachments/assets/c7eee7ac-9dc6-4fd9-bd3c-363705c8e621" />
 
 ip: 127.0.0.1
 port: 1433
-username: sa
-password: 1234
+username: nodered
+password: 12345678
 db_name: web_bt_102025
 table_name: sv
 ###### rows affected => kết nối thành công
@@ -180,23 +182,34 @@ tìm đến chỗ adminAuth, bỏ comment # ở đầu dòng (8 dòng), thay chu
 <img width="1366" height="728" alt="40" src="https://github.com/user-attachments/assets/ae035dc2-d5af-44e4-9d50-34269c010349" />
 
 ##### 5. tạo api back-end bằng nodered:
-- sử dụng node `http in` và `http response` để tạo api:
+sử dụng node `http in` và `http response` để tạo api:
 <img width="651" height="302" alt="41" src="https://github.com/user-attachments/assets/50d0736e-b955-473f-9d19-7de1f4302b16" />
-- thêm node `MSSQL` để truy vấn tới cơ sở dữ liệu:
+
+thêm node `MSSQL` để truy vấn tới cơ sở dữ liệu:
 <img width="600" height="339" alt="42" src="https://github.com/user-attachments/assets/cd1e4366-256d-4156-8587-7a3d4dddeee9" />
-- logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây): 
+logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây): 
   1. http in  : dùng GET cho đơn giản, URL đặt tuỳ ý, ví dụ: /timkiem
   2. function : để tiền xử lý dữ liệu gửi đến
   3. MSSQL: để truy vấn dữ liệu tới CSDL, nhận tham số từ node tiền xử lý
   4. http response: để phản hồi dữ liệu về client: Status Code=200, Header add : Content-Type = application/json
-  có thể thêm node `debug` để quan sát giá trị trung gian.
+  có thể thêm node `debug` để quan sát giá trị trung gian
+
+- node red:
 <img width="807" height="317" alt="43" src="https://github.com/user-attachments/assets/1ea2cac2-bafa-4d32-b86d-27b42fc042eb" />
 <img width="830" height="368" alt="44" src="https://github.com/user-attachments/assets/89efad72-c5d1-459e-b673-0d167cb309ce" />
+<img width="638" height="518" alt="45" src="https://github.com/user-attachments/assets/70399575-c1ac-4dac-9085-b87e35670358" />
+<img width="513" height="538" alt="46" src="https://github.com/user-attachments/assets/678e0018-4aff-4911-8894-4c92fe5f6b59" />
+<img width="505" height="530" alt="47" src="https://github.com/user-attachments/assets/09d4d617-6817-4e52-af76-bb3ebea59ed8" />
+<img width="545" height="443" alt="48" src="https://github.com/user-attachments/assets/876f42cb-3dae-48e7-bd64-e5ca4aba8bb7" />
+<img width="805" height="479" alt="49" src="https://github.com/user-attachments/assets/524a9196-dc92-4872-a94b-1855b40e14be" />
 
+- test api thông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=minh
+<img width="529" height="154" alt="50" src="https://github.com/user-attachments/assets/8df7e6ec-b415-4299-aaf2-f70bfc38a2d7" />
+<img width="605" height="140" alt="53" src="https://github.com/user-attachments/assets/60ab4664-0b95-41c5-b38d-eafe4efdfe82" />
+<img width="511" height="65" alt="54" src="https://github.com/user-attachments/assets/0455c8e3-c69f-4e63-a7cd-93447e98aa9f" />
 
-- test api thông qua trình duyệt, ví dụ: http://localhost:1880/timkiem?q=thị
-
+em đã thử nhưng không thể lấy dữ liệu về dù trong cơ sở dữ liệu có bản ghi
 ##### 6. Tạo giao diện front-end:
-
-##### 7. Nhận xét bài làm của mình:
-Quá trình làm bài đã giúp em củng cố kiến thức một cách toàn diện về chu trình phát triển ứng dụng. Em đã nắm vững cách cài đặt và cấu hình các phần mềm cốt lõi: Apache được thiết lập như một Web Server nội bộ để phục vụ các file Front-end tĩnh, trong khi Node.js tạo môi trường cho Node-RED hoạt động như máy chủ API. Việc hiểu rõ cách Apache phục vụ nội dung qua thư mục htdocs và cách Node-RED mặc định chạy trên cổng 1880 đã làm rõ mối liên hệ giữa các thành phần trên cùng một máy tính.
+tạo html form gồm các file : index.html, fullname.js, fullname.css
+<img width="1366" height="562" alt="55" src="https://github.com/user-attachments/assets/319f4992-2aeb-4684-8acb-6a82b4d8b943" />
+<img width="1366" height="483" alt="56" src="https://github.com/user-attachments/assets/4f1ac5c3-9882-4919-a8a1-5676bdec9dd1" />

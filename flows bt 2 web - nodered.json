@@ -1,0 +1,17 @@
+[
+    {
+        "id": "func-prepare-query",
+        "type": "function",
+        "z": "tab1-mssql-final-clean",
+        "name": "Xử lý tham số & tạo query",
+        "func": "// Kiểm tra request hợp lệ\nif (!msg.req || !msg.req.query) {\n    msg.payload = { error: \"Thiếu tham số ?q=\" };\n    msg.statusCode = 400;\n    return msg;\n}\n\nlet ten = (msg.req.query.q || '').trim();\nif (ten === '') {\n    msg.payload = { error: \"Tham số q rỗng\" };\n    msg.statusCode = 400;\n    return msg;\n}\n\n// Tạo query MSSQL Plus\nmsg.query = \"SELECT * FROM sv WHERE ten = @ten\";\nmsg.params = [{ name: \"ten\", type: \"NVarChar\", value: ten }];\nmsg.queryType = \"query\";\nreturn msg;",
+        "outputs": 1,
+        "x": 370,
+        "y": 160,
+        "wires": [
+            [
+                "mssqlplus-query"
+            ]
+        ]
+    }
+]

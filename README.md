@@ -211,5 +211,6 @@ logic flow sẽ gồm 4 node theo thứ tự sau (thứ tự nối dây):
 em đã thử nhưng không thể lấy dữ liệu về dù trong cơ sở dữ liệu có bản ghi
 ##### 6. Tạo giao diện front-end:
 tạo html form gồm các file : index.html, fullname.js, fullname.css
+đặt apache2.4 cổng 8080
 <img width="1366" height="562" alt="55" src="https://github.com/user-attachments/assets/319f4992-2aeb-4684-8acb-6a82b4d8b943" />
 <img width="1366" height="483" alt="56" src="https://github.com/user-attachments/assets/4f1ac5c3-9882-4919-a8a1-5676bdec9dd1" />
